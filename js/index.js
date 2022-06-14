@@ -21,8 +21,6 @@ if (isLogin) {
   loginLink.textContent = 'LogIn/SignUp'
 }
 
-let smLastPressed
-
 // checking for a click on menuBtn and toggling menu on and off
 menuBtn.addEventListener("click", () => {
   if (menu.style.opacity == '1') {
