@@ -1,0 +1,41 @@
+@font-face {
+  font-family: SpaceMono;
+  src: url('SpaceMono-Regular.ttf');
+}
+
+:root {
+  font-family: 'SpaceMono';
+}
+
+.nav-main-link, .menu-item {
+  font-family: 'VT323';
+}
+
+.blog-entry-wrapper {
+  width: 100vw;
+}
+
+.blog-entry {
+  display: flex;
+  background-color: var(--content-bgc);
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry-title {
+  text-align: center;
+}
+
+.entry-title-img {
+  width: calc(100vw - 30px);
+  filter: invert(1);
+}
+
+.contents-list {
+  list-style: '#';
+}
+
+.contents-item {
+  color: var(--color-dark0);
+  font-size: 12px;
+}
