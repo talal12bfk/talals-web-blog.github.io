@@ -29,13 +29,45 @@
 .entry-title-img {
   width: calc(100vw - 30px);
   filter: invert(1);
+  margin-top: 70px;
+}
+
+.entry-title-text {
+  margin-bottom: 5px;
+}
+
+.toc-text {
+  margin: 5px 0 5px 0;
 }
 
 .contents-list {
-  list-style: '#';
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+.contents {
+  margin: 1px;
+  text-align: center;
 }
 
 .contents-item {
   color: var(--color-dark0);
+  font-size: 12px;
+}
+
+.entry-section {
+  margin: 0 10px 5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--color-dark4);
+}
+
+.entry-section-title {
+  color: var(--color-light);
+  margin-top: 0;
+}
+
+.entry-section-text {
+  color: var(--color-light);
   font-size: 12px;
 }
