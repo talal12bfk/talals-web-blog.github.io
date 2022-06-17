@@ -34,6 +34,7 @@
 
 .entry-title-text {
   margin-bottom: 5px;
+  color: var(--color-0-dark);
 }
 
 .toc {
@@ -49,6 +50,7 @@
 
 .toc-text {
   margin: 5px 0 0 0;
+  color: var(--color-0-dark);
 }
 
 .contents-list {
@@ -64,7 +66,7 @@
 }
 
 .contents-item {
-  color: var(--color-dark0);
+  color: var(--color-0-dark);
   font-size: 12px;
 }
 
@@ -76,12 +78,12 @@
 }
 
 .entry-section-title {
-  color: var(--color-dark0);
+  color: var(--color-0-dark);
   margin-top: 0;
 }
 
 .entry-section-text {
-  color: var(--color-dark0);
+  color: var(--color-0-dark);
   font-size: 12px;
 }
 
@@ -92,4 +94,5 @@
 .section-img-description {
   font-size: 9px;
   margin-top: 0;
+  color: var(--color-0-dark);
 }

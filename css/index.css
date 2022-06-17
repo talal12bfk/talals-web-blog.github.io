@@ -4,15 +4,19 @@
 }
 
 :root {
-  --color-dark0: #000;
-  --color-dark1: #101010;
-  --color-dark2: #1c1c1c;
-  --color-dark3: #212121;
-  --color-dark4: #232323;
-  --color-light: #edededed;
-  --brightness: 100%;
-  --content-bgc: #e2e2e2;
   font-family: VT323;
+
+  --color-0-dark: #000;
+  --color-0-light: #fff;
+
+  --color-2-dark: #1c1c1c;
+  --color-2-light: #a2a2a2;
+
+  --color-3-dark: #212121;
+
+  --color-light: #edededed;
+
+  --content-bgc: #e2e2e2;
 }
 
 /* margin: top right bottom left; */
@@ -47,7 +51,7 @@ a {
 
 .nav {
   display: flex;
-  background-color: var(--color-dark2);
+  background-color: var(--color-2-dark);
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -58,8 +62,6 @@ a {
   font-size: 32px;
 }
 
-
-
 #menuBtn {
   padding: 0;
 }
@@ -67,7 +69,7 @@ a {
 .menu-btn-img {
   width: 20px;
   height: 20px;
-  filter: brightness(var(--brightness));
+  filter: brightness(100%);
   object-fit: fill;
 }
 
@@ -75,7 +77,7 @@ a {
   display: flex;
   opacity: 0;
   pointer-events: none;
-  background-color: var(--color-dark0);
+  background-color: var(--color-0-dark);
   align-items: center;
   justify-content: space-evenly;
   padding: 8px;
@@ -85,8 +87,6 @@ a {
   color: var(--color-light);
   font-size: 14px;
 }
-
-
 
 #themeSwitch {
   color: var(--color-light);
@@ -101,8 +101,6 @@ a {
   fill: var(--color-light);
 }
 
-
-
 #searchBtn {
   background-color: transparent;
   border: none;
@@ -114,7 +112,7 @@ a {
 #search {
   opacity: 0;
   pointer-events: none;
-  background-color: var(--color-dark0);
+  background-color: var(--color-0-dark);
   display: flex;
   height: 42px;
   position: relative;
@@ -156,6 +154,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .content:first-child {
@@ -183,7 +182,7 @@ a {
 .content-text {
   text-align: center;
   margin: 5px 0 5px 0;
-  color: var(--color-dark2);
+  color: var(--color-2-dark);
 }
 
 #upBtn {
@@ -197,7 +196,7 @@ a {
 .up-button-svg {
   width: 32px;
   height: 32px;
-  fill: var(--color-dark2);
+  fill: var(--color-2-dark);
 }
 
 .more-wrapper {
@@ -205,7 +204,7 @@ a {
 }
 
 .more {
-  background-color: var(--color-dark2);
+  background-color: var(--color-2-dark);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -214,7 +213,7 @@ a {
 }
 
 .more:hover,#moreBtn:hover {
-  background-color: var(--color-dark3);
+  background-color: var(--color-3-dark);
 }
 
 #moreBtn {
@@ -223,14 +222,12 @@ a {
   color: var(--color-light);
 }
 
-
-
 .footer-wrapper {
   margin: 0;
 }
 
 .footer {
-  background-color: var(--color-dark2);
+  background-color: var(--color-2-dark);
   padding: 10px;
   display: flex;
   align-items: center;
