@@ -1,16 +1,10 @@
 const body = document.querySelector('body')
-const themeSwitchBtn = document.querySelector('#themeSwitch')
-const loginLink = document.querySelector('#loginLink')
-const menuBtn = document.querySelector('#menuBtn')
-const searchBtn = document.querySelector('#searchBtn')
-const search = document.querySelector('#search')
-const menu = document.querySelector('#menu')
-const contents = document.querySelectorAll('.content')
-const navbar = document.querySelector('.nav-container')
-
 
 
 // checking if loged in and setting the text of the login link
+
+const loginLink = document.querySelector('#loginLink')
+
 let isLogin = true
 if (isLogin) {
   loginLink.textContent = 'LogOut'
@@ -18,7 +12,11 @@ if (isLogin) {
   loginLink.textContent = 'LogIn/SignUp'
 }
 
+
 // checking for a click on themeSwitchBtn and toggling dark/light theme
+
+const themeSwitchBtn = document.querySelector('#themeSwitch')
+
 let theme = 'light'
 themeSwitchBtn.addEventListener("click", themeSwitcher())
 
@@ -40,7 +38,12 @@ function setDarkTheme() {
   
 }
 
+
 // checking for a click on menuBtn and toggling menu on and off
+
+const menuBtn = document.querySelector('#menuBtn')
+const menu = document.querySelector('#menu')
+
 menuBtn.addEventListener("click", () => {
   if (menu.style.opacity == '1') {
     gsap.to('#menu', {
@@ -61,7 +64,11 @@ menuBtn.addEventListener("click", () => {
   }
 })
 
+
 // checking for a click on searchBtn and toggling search bar on and off
+
+const searchBtn = document.querySelector('#searchBtn')
+const search = document.querySelector('#search')
 
 if (document.location.pathname == '/index.html') {
   searchBtn.addEventListener("click", () => {
@@ -84,7 +91,12 @@ if (document.location.pathname == '/index.html') {
     }
   })
 }
+
+
 // checking for click on a content object then redirect the user to the page using the data-url attribute
+
+const contents = document.querySelectorAll('.content')
+
 contents.forEach(content => {
   content.addEventListener("click", (e) => {
     url = content.getAttribute('data-url')
@@ -93,7 +105,9 @@ contents.forEach(content => {
 })
 
 
-// hidding/showing navbar and upBtn
+// hidding/showing navbar
+
+const navbar = document.querySelector('.nav-container')
 
 window.addEventListener('scroll', (e) => {
   if (e.path[1].scrollY >= 39) {
@@ -103,8 +117,11 @@ window.addEventListener('scroll', (e) => {
   }
 })
 
+
+// hidding/showing upBtn
+
 window.addEventListener('scroll', (e) => {
-  if (e.path[1].scrollY >= 100) {
+  if (e.path[1].scrollY >= 150) {
     gsap.to('#upBtn', {
       opacity: 1,
       duration: 0.3,
@@ -123,10 +140,11 @@ window.addEventListener('scroll', (e) => {
   }
 })
 
+
 // upBtn functionality
 
 const upBtn = document.querySelector('#upBtn')
 
 upBtn.addEventListener("click", () => {
-  window.scrollTo(0,0)
+  window.scrollTo(0, 0)
 })
