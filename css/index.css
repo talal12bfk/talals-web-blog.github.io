@@ -36,12 +36,15 @@ a {
   padding: 0;
 }
 
+
+
 .nav-container {
   position: fixed;
   width: 100vw;
   height: 64px;
   z-index: 5;
 }
+
 .nav {
   display: flex;
   background-color: var(--color-dark2);
@@ -49,20 +52,25 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+
 .nav-main-link {
   color: var(--color-light);
   font-size: 32px;
 }
 
+
+
 #menuBtn {
   padding: 0;
 }
+
 .menu-btn-img {
   width: 20px;
   height: 20px;
   filter: brightness(var(--brightness));
   object-fit: fill;
 }
+
 #menu {
   display: flex;
   opacity: 0;
@@ -72,21 +80,28 @@ a {
   justify-content: space-evenly;
   padding: 8px;
 }
+
+.menu-item {
+  color: var(--color-light);
+  font-size: 14px;
+}
+
+
+
 #themeSwitch {
   color: var(--color-light);
   display: flex;
   align-items: center;
   padding: 0;
 }
+
 .theme-switch-icon {
   width: 24px;
   height: 24px;
   fill: var(--color-light);
 }
-.menu-item {
-  color: var(--color-light);
-  font-size: 14px;
-}
+
+
 
 #searchBtn {
   background-color: transparent;
@@ -95,6 +110,7 @@ a {
   padding: 0;
   font-size: 19px;
 }
+
 #search {
   opacity: 0;
   pointer-events: none;
@@ -104,6 +120,7 @@ a {
   position: relative;
   top: -42px;
 }
+
 #searchField {
   flex-grow: 1;
   background-color: transparent;
@@ -112,31 +129,39 @@ a {
   border-right: 1px solid #cfcfcf;
   color: var(--color-light);
 }
+
 #searchField:focus {
   outline: none;
 }
+
 #searchSubmit {
   flex-grow: 0.1;
   background-color: transparent;
   border: none;
 }
+
 #searchSubmit:hover {
   background-color: rgba(255,255,255,0.158);
 }
+
 .search-svg {
   width: 16px;
   height: 16px;
   fill: var(--color-light);
 }
 
+
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .content:first-child {
   margin-top: 100px;
 }
+
 .content {
   display: flex;
   width: 90%;
@@ -148,20 +173,37 @@ a {
   border-radius: 5px;
   padding: 5px;
 }
+
 .content-thumbnail {
   width: 12rem;
   height: 8rem;
   filter: invert(100%);
 }
+
 .content-text {
   text-align: center;
   margin: 5px 0 5px 0;
   color: var(--color-dark2);
 }
 
+#upBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  z-index: 5;
+}
+
+.up-button-svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-dark2);
+}
+
 .more-wrapper {
   height: 30px;
 }
+
 .more {
   background-color: var(--color-dark2);
   padding: 10px;
@@ -170,14 +212,18 @@ a {
   justify-content: center;
   cursor: pointer;
 }
+
 .more:hover,#moreBtn:hover {
   background-color: var(--color-dark3);
 }
+
 #moreBtn {
   width: 100%;
   height: 100%;
   color: var(--color-light);
 }
+
+
 
 .footer-wrapper {
   margin: 0;
@@ -191,17 +237,22 @@ a {
   justify-content: center;
   gap: 10px;
 }
+
 .footer-link-text {
   color: var(--color-light);
   text-align: center;
+  font-size: 12px;
 }
+
 .footer-icon-svg {
   width: 24px;
   height: 24px;
   fill: var(--color-light);
 }
+
 .footer-text {
   margin: 0;
   color: var(--color-light);
   text-align: center;
+  font-size: 12px;
 }
