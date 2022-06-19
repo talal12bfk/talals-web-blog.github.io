@@ -5,37 +5,11 @@ const body = document.querySelector('body')
 
 const loginLink = document.querySelector('#loginLink')
 
-let isLogin = true
+let isLogin = false
 if (isLogin) {
   loginLink.textContent = 'LogOut'
 } else {
   loginLink.textContent = 'LogIn/SignUp'
-}
-
-
-// checking for a click on themeSwitchBtn and toggling dark/light theme
-
-const themeSwitchBtn = document.querySelector('#themeSwitch')
-
-let theme = 'light'
-themeSwitchBtn.addEventListener("click", themeSwitcher())
-
-function themeSwitcher() {
-  if (theme == 'light') {
-    theme = 'dark'
-    setDarkTheme()
-  } else {
-    theme = 'light'
-    setLightTheme()
-  }
-}
-
-function setLightTheme() {
-  
-}
-
-function setDarkTheme() {
-  
 }
 
 
