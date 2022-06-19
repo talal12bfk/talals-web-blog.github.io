@@ -59,7 +59,7 @@ function setDarkTheme() {
     contentsText.forEach(contentText => {contentText.style.color = '#' + contentBgc})
   }
   
-  if (document.location.pathname == '/entries/') {
+  if (document.location.pathname == '/entries/firstEntry.html') {
     body.style.backgroundColor = '#' + color3Dark
     entryTitleText.style.color = '#' + contentBgc
     toc.style.backgroundColor = '#' + color2Dark
